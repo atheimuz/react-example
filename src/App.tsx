@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { ThemeProvider } from "@emotion/react";
 import * as theme from "@/styles/theme";
-import FunnelPage from "./components/FunnelPage";
+import ErrorPage from "./pages/Error";
 
 const queryClient = new QueryClient();
 
@@ -14,6 +14,7 @@ const App = (): ReactNode => {
             <ThemeProvider theme={theme}>
                 <BrowserRouter>
                     <Routes>
+                        <Route path="/error" element={<ErrorPage />} />
                         <Route path="/funnel/*" element={<FunnelPage />} />
                     </Routes>
                 </BrowserRouter>
