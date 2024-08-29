@@ -3,7 +3,7 @@ import { QueryErrorResetBoundary } from "@tanstack/react-query";
 import ErrorBoundary, {
     RenderFallbackType,
 } from "@/components/error/ErrorBoundary";
-import ContentChildren from "@/components/error/ContentChildren";
+import DataBox from "@/components/error/DataBox";
 import ErrorMessage from "@/components/error/ErrorMessage";
 import * as styles from "./styles";
 
@@ -22,7 +22,7 @@ const Content = (): ReactNode => {
                         )}
                     >
                         <Suspense fallback={<p>Loading...</p>}>
-                            <ContentChildren />
+                            <DataBox />
                         </Suspense>
                     </ErrorBoundary>
                 )}

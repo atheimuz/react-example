@@ -8,7 +8,7 @@ const fetcher = ({ page }: { page: number }) =>
         .get<productProps[]>(`/test/goods${page}.json`)
         .then(({ data }) => data?.data?.list);
 
-const useProductQuery = ({ page = 0 } = {}): { page: number } =>
+const useProductQuery = ({ page = 0 } = {}) =>
     useQuery({
         queryKey: [QUERY_KEY, page],
         queryFn: () => fetcher({ page }),
