@@ -10,26 +10,27 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "@types/react": "^18.3.3",
-        "@types/react-dom": "^18.3.0",
         "@emotion/react": "^11.13.0",
         "@tanstack/react-query": "^5.52.0",
         "@tanstack/react-query-devtools": "^5.52.0",
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
         "axios": "^1.7.4",
+        "my-common-components": "https://github.com/atheimuz/my-common-components.git",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
+        "react-error-boundary": "^4.0.13",
         "react-hook-form": "^7.53.0",
         "react-icons": "^5.3.0",
         "react-modal-sheet": "^3.1.0",
         "react-router": "^6.26.1",
         "react-router-dom": "^6.26.1",
-        "react-transition-group": "^4.4.5",
-        "my-common-components": "https://github.com/atheimuz/my-common-components.git"
+        "react-transition-group": "^4.4.5"
     },
     "devDependencies": {
-        "@eslint/js": "^9.9.0",
         "@emotion/babel-plugin": "^11.12.0",
         "@emotion/babel-preset-css-prop": "^11.12.0",
+        "@eslint/js": "^9.9.0",
         "@vitejs/plugin-react": "^4.3.1",
         "eslint": "^9.9.0",
         "eslint-plugin-react-hooks": "^5.1.0-rc.0",
